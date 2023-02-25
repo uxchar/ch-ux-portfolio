@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-@import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
+@import "abstracts/animations", "abstracts/variables", "abstracts/functions",
+  "abstracts/mixins";
 
 // 2. Vendors
 @import "vendors/normalize";
@@ -17,3 +18,6 @@
 
 // 6. Page-specific styles
 @import "pages/home", "pages/case-study";
+
+//7. Theme styles
+@import "themes/light";

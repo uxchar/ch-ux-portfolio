@@ -21,23 +21,19 @@ html {
   box-sizing: inherit;
 }
 
-/**
- * Basic styles for links
- */
-
 body {
-  background-color: $really-dark-grey;
+  // background-color: $really-dark-grey;
   margin: auto 30px;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  color: $light-grey;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// p,
+// li {
+//   color: $light-grey;
+// }
 
 a {
   color: $brand-color;
@@ -46,5 +42,17 @@ a {
   @include on-event {
     color: $text-color;
     text-decoration: underline;
+  }
+}
+
+@include mq(medium) {
+  body {
+    margin: auto 80px;
+  }
+}
+
+@include mq(large) {
+  body {
+    margin: auto 100px;
   }
 }

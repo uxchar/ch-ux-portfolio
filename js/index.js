@@ -63,6 +63,7 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 
+//
 let elements = document.querySelectorAll(
   ".element, .project-img, .case_headline, .case-img"
 );
@@ -110,12 +111,30 @@ $(window)
       ) {
         // Remove all classes on body with color-
         $body.removeClass(function (index, css) {
-          return (css.match(/(^|\s)color-\S+/g) || []).join(" ");
+          return (css.match(/(^|\s)really-dark-\S+/g) || []).join(" ");
         });
 
         // Add class of currently active div
-        $body.addClass("color-" + $(this).data("color"));
+        $body.addClass("really-dark-" + $(this).data("color"));
       }
     });
   })
   .scroll();
+
+//img zoom
+let imgs = document.getElementsByClassName("case-img"),
+  modal = document.getElementById("myModal");
+for (let i = 0; i < imgs.length; i++) {
+  imgs[i].onclick = function (e) {
+    imgZoom(e);
+  };
+}
+function imgZoom(e) {
+  modal.style.display = "block";
+  let src = e.target.style.backgroundImage.slice(4, -1).replace(/['"]/g, "");
+  imgModal.src = src;
+}
+let span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+  modal.style.display = "none";
+};

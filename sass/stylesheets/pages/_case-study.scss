@@ -1,6 +1,14 @@
 body {
   transition: background-color 0.5s ease;
+  background-color: #fff;
 }
+
+.contact_section a,
+a:link,
+a:visited {
+  color: #000;
+}
+
 section {
   margin-bottom: 150px;
   p {
@@ -17,7 +25,7 @@ ul {
 
 .underline {
   margin: 20px auto;
-  //   border-bottom: 4px solid $text-color-dark;
+  border-bottom: 4px solid $text-color;
   width: 5%;
 }
 
@@ -39,6 +47,11 @@ ul {
 
 .question {
   text-align: center;
+}
+
+.really-dark-grey {
+  background-color: $really-dark-grey;
+  color: $light-grey;
 }
 
 @media (min-width: 600px) {
@@ -63,8 +76,8 @@ ul {
   }
   /* Section with images */
 
-  section {
-    margin: 250px 100px;
+  .panel {
+    margin: 250px auto;
   }
 
   section.image_section {

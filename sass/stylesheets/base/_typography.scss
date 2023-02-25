@@ -30,6 +30,7 @@ h3 {
 
 p {
   font-family: $text-font-stack-secondary;
+
   line-height: 1.5;
 }
 
@@ -52,4 +53,40 @@ a:visited {
 
 button {
   font-family: $text-font-stack-primary;
+}
+
+@include mq(medium) {
+  h1 {
+    font-size: $heading1-text-size-mobile + 2.5rem;
+  }
+  h2 {
+    font-size: $heading2-text-size-mobile + 2.5;
+  }
+  h3 {
+    font-size: $heading3-text-size-mobile + 1;
+  }
+}
+
+@include mq(large) {
+  h1 {
+    font-size: $heading1-text-size-mobile + 3.5rem;
+  }
+  h2 {
+    font-size: $heading2-text-size-mobile + 3;
+  }
+  h3 {
+    font-size: $heading3-text-size-mobile + 1.5;
+  }
+
+  p,
+  li {
+    font-family: $text-font-stack-secondary;
+    font-size: $text-body-font-size + 0.3;
+    line-height: 1.5;
+  }
+
+  .secondary-title {
+    font-size: $text-body-font-size + 0.3rem;
+    font-weight: $font-weight-light;
+  }
 }
