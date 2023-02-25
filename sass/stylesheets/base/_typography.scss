@@ -1,0 +1,55 @@
+/**
+ * Basic typography style for copy text
+ */
+
+body {
+  font-size: $text-body-font-size;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-family: $text-font-stack-primary;
+}
+
+h1 {
+  font-size: $heading1-text-size-mobile;
+}
+
+h2 {
+  font-weight: $font-weight-bold;
+  font-size: $heading2-text-size-mobile;
+}
+
+h3 {
+  font-weight: $font-weight-bold;
+  font-size: $heading3-text-size-mobile;
+}
+
+p {
+  font-family: $text-font-stack-secondary;
+  line-height: 1.5;
+}
+
+nav .nav-el {
+  text-transform: uppercase;
+  font-family: $text-font-stack-primary;
+  font-weight: $font-weight-semi-bold;
+}
+
+.contact_section a,
+a:link,
+a:visited {
+  font-family: $text-font-stack-primary;
+  text-transform: uppercase;
+}
+
+.copyright {
+  font-size: $secondary-text-font-size;
+}
+
+button {
+  font-family: $text-font-stack-primary;
+}

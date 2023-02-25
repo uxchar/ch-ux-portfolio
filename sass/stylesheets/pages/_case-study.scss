@@ -1,0 +1,95 @@
+body {
+  transition: background-color 0.5s ease;
+}
+section {
+  margin-bottom: 150px;
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+ul {
+  margin-top: 40px;
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+.underline {
+  margin: 20px auto;
+  //   border-bottom: 4px solid $text-color-dark;
+  width: 5%;
+}
+
+.case_secondary_title {
+  text-align: center;
+}
+.section_img {
+  text-align: center;
+}
+
+.case_main_img {
+  width: 100%;
+}
+
+.case-img {
+  width: 100%;
+  height: auto;
+}
+
+.question {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .case_headline {
+    text-align: center;
+  }
+
+  .case-problem {
+    margin: auto 0;
+  }
+
+  .case_overview {
+    width: 80%;
+    margin: 0 auto 400px auto;
+  }
+
+  p {
+    margin-top: 40px;
+  }
+  li a {
+    margin: 15px auto;
+  }
+  /* Section with images */
+
+  section {
+    margin: 250px 100px;
+  }
+
+  section.image_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .center {
+    margin: auto 100px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+
+  .center_light {
+    margin: auto 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .off_white {
+    margin: auto 0;
+  }
+  .case-img:hover {
+    cursor: pointer;
+  }
+}

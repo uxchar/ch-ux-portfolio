@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+/// Regular font family
+/// @type List
+$text-font-stack-primary: "Work Sans", "Helvetica Neue Light", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif !default;
+
+$text-font-stack-secondary: "Lora", "Helvetica Neue Light", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif !default;
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+  "Monaco", monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222222 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: hsl(0, 100%, 70%) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: hsl(0, 0%, 97%) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+/// Really Dark grey
+/// @type Color
+$really-dark-grey: hsl(0, 0%, 5%);
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semi-bold: 500;
+$font-weight-bold: 700;
+
+$text-body-font-size: 1rem;
+$secondary-text-font-size: 0.8125rem;
+$heading1-text-size-mobile: 2.5rem;
+$heading2-text-size-mobile: 2rem;
+$heading3-text-size-mobile: 1.5rem;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px,
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'https://cdn.example.com/assets/';
+$base-url: "/assets/" !default;

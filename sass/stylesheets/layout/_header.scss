@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+nav {
+  margin: 40px auto 100px auto;
+}
+nav .nav-el {
+  color: hsl(30deg, 15%, 92%);
+}
+nav .role {
+  margin-left: auto;
+}
+
+@media (min-width: 600px) {
+  nav {
+    margin: 0 100px;
+  }
+}
