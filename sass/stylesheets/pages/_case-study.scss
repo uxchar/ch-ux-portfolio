@@ -52,6 +52,9 @@ ul {
 .really-dark-grey {
   background-color: $really-dark-grey;
   color: $light-grey;
+  .underline {
+    border-bottom: 4px solid #fff;
+  }
 }
 
 @media (min-width: 600px) {

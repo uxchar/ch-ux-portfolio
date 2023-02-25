@@ -387,7 +387,7 @@ a:hover, a:active, a:focus, a:focus-within {
 
 @media screen and (min-width: 768px) {
   body {
-    margin: auto 80px;
+    margin: auto 60px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -649,6 +649,17 @@ button:hover .text {
   color: hsl(0, 0%, 100%);
 }
 
+.theme_dark {
+  background-color: hsl(0, 0%, 5%);
+  color: hsl(0, 0%, 100%);
+}
+
+.contact-section-home a,
+a:link,
+a:visited {
+  color: hsl(0, 0%, 100%);
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -781,6 +792,9 @@ ul li {
 .really-dark-grey {
   background-color: hsl(0, 0%, 5%);
   color: hsl(0, 0%, 100%);
+}
+.really-dark-grey .underline {
+  border-bottom: 4px solid #fff;
 }
 
 @media (min-width: 600px) {

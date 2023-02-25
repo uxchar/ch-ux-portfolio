@@ -7,6 +7,17 @@
 //   grid-template-rows: repeat(10% 30% 45% 5%);
 // }
 
+.theme_dark {
+  background-color: $really-dark-grey;
+  color: $light-grey;
+}
+
+.contact-section-home a,
+a:link,
+a:visited {
+  color: $light-grey;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
