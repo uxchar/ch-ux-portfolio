@@ -41,7 +41,6 @@ a {
 
   @include on-event {
     color: $text-color;
-    text-decoration: underline;
   }
 }
 
@@ -53,6 +52,6 @@ a {
 
 @include mq(large) {
   body {
-    margin: auto 100px;
+    margin: auto 150px;
   }
 }

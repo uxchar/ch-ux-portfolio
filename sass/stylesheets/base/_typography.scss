@@ -4,14 +4,30 @@
 
 body {
   font-size: $text-body-font-size;
+  font-weight: $font-weight-semi-bold;
 }
 
+li {
+  font-size: $text-body-font-size;
+  font-weight: $font-weight-semi-bold;
+  font-family: $text-font-stack-secondary;
+}
 h1,
-h2,
-h3,
-h4 {
+h2 {
   text-transform: uppercase;
   font-family: $text-font-stack-primary;
+  font-weight: $font-weight-bold;
+}
+
+h3 {
+  font-family: $text-font-stack-primary;
+  font-weight: $font-weight-normal;
+  text-transform: capitalize;
+}
+h4 {
+  font-family: $text-font-stack-primary;
+  font-size: $text-body-font-size;
+  font-weight: $font-weight-normal;
 }
 
 h1 {
@@ -30,8 +46,7 @@ h3 {
 
 p {
   font-family: $text-font-stack-secondary;
-
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 nav .nav-el {
@@ -57,7 +72,7 @@ button {
 
 @include mq(medium) {
   h1 {
-    font-size: $heading1-text-size-mobile + 2.5rem;
+    font-size: $heading1-text-size-mobile + 2rem;
   }
   h2 {
     font-size: $heading2-text-size-mobile + 2.5;
@@ -80,8 +95,6 @@ button {
 
   p,
   li {
-    font-family: $text-font-stack-secondary;
-    font-size: $text-body-font-size + 0.3;
     line-height: 1.5;
   }
 
