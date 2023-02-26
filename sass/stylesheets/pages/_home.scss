@@ -33,7 +33,7 @@
 }
 
 .top-wrap {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .case-template {
@@ -43,7 +43,6 @@
 .project-container {
   .project-title {
     font-weight: $font-weight-bold;
-    text-transform: uppercase;
   }
 
   .project-type {
@@ -86,7 +85,6 @@ footer {
     grid-template-rows: auto auto auto;
     .project-title {
       font-weight: 700;
-      text-transform: uppercase;
       grid-row: 2;
       grid-column: 1;
     }
