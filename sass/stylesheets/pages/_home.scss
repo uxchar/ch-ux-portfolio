@@ -12,21 +12,6 @@
   color: $light-grey;
 }
 
-.work {
-  margin-left: auto;
-  align-self: center;
-}
-
-.contact_section_dark a,
-.contact_section_dark a:link,
-.contact_section_dark a:visited {
-  color: $light-grey !important;
-}
-
-.light {
-  color: $really-dark-grey;
-}
-
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -120,11 +105,8 @@ footer {
       grid-column: span 3;
     }
   }
-
-  .contact-link {
-    margin-right: 30px;
-  }
 }
+
 .resume-content {
   display: flex;
   justify-content: center;

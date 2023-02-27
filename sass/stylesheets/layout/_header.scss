@@ -4,9 +4,28 @@
 nav {
   margin: 40px auto 100px auto;
 }
-nav .nav-el {
-  color: hsl(30deg, 15%, 92%);
-}
+
 nav .role {
   margin-left: auto;
+}
+
+a.nav-el-light,
+a.nav-el-light:link,
+a.nav-el-light:visited {
+  color: $really-dark-grey;
+}
+
+a.nav-el-dark,
+a.nav-el-dark:link,
+a.nav-el-dark:visited {
+  color: $light-grey;
+}
+
+.work {
+  margin-left: auto;
+  align-self: center;
+}
+
+.about {
+  margin-left: 40px;
 }

@@ -2,11 +2,8 @@ body {
   transition: background-color 0.5s ease;
   background-color: #fff;
 }
-
-.contact_section_light a,
-.contact_section_light a:link,
-.contact_section_light a:visited {
-  color: #000;
+ul {
+  list-style: none;
 }
 
 section {
@@ -54,6 +51,15 @@ ul {
   color: $light-grey;
   .underline {
     border-bottom: 4px solid #fff;
+  }
+}
+.case_links a,
+.case_links a:link,
+.case_links a:visited {
+  color: $really-dark-grey;
+  margin-right: 30px;
+  .case_links a:hover {
+    color: $brand-color;
   }
 }
 

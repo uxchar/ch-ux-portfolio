@@ -26,21 +26,15 @@ body {
   margin: auto 30px;
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// p,
-// li {
-//   color: $light-grey;
-// }
-
+ul {
+  list-style: none;
+  padding: 0;
+}
 a {
-  color: $brand-color;
   text-decoration: none;
 
   @include on-event {
-    color: $text-color;
+    color: $brand-color;
   }
 }
 
@@ -53,5 +47,11 @@ a {
 @include mq(large) {
   body {
     margin: auto 150px;
+  }
+}
+
+@include mq(x-large) {
+  body {
+    margin: auto 200px;
   }
 }
